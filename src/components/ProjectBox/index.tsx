@@ -6,11 +6,15 @@ import { Web } from '@styled-icons/material-rounded'
 export type ProjectBoxProps = {
   title: string
   description: string
+  img: {
+    url: string
+    alt: string
+  }
 }
 
-const ProjectBox = ({ title, description }: ProjectBoxProps) => (
+const ProjectBox = ({ title, description, img }: ProjectBoxProps) => (
   <S.Wrapper>
-    <Image src="/img/ignite-gobarber.png" width={450} height={245} />
+    <Image src={img.url} alt={img.alt} width={450} height={245} />
     <S.Content>
       <div>
         <S.Title>{title}</S.Title>
