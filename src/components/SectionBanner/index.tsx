@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import * as S from './styles'
-import { motion } from 'framer-motion'
 
 export type SectionBannerProps = {
   author: string
@@ -15,18 +14,8 @@ const SectionBanner = ({ author, title, img }: SectionBannerProps) => (
   <S.Wrapper>
     <S.Content>
       <div>
-        <motion.p
-          animate={{ y: [100, 0], opacity: [0, 1] }}
-          transition={{ duration: 1, delay: 0.5, type: 'spring' }}
-        >
-          {author}
-        </motion.p>
-        <motion.h1
-          animate={{ y: [100, 0], opacity: [0, 1] }}
-          transition={{ duration: 1, delay: 0.8, type: 'spring' }}
-        >
-          {title}
-        </motion.h1>
+        <S.Author>{author}</S.Author>
+        <S.Title>{title}</S.Title>
       </div>
       <S.BannerImage>
         <Image src={img.url} alt={img.alt} width={336} height={521} />
