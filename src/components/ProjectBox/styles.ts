@@ -7,6 +7,12 @@ export const Wrapper = styled.div`
   background: #cccccc;
   border-radius: 20px;
   overflow: hidden;
+
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `
 
 export const Content = styled.div`
