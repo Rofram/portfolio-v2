@@ -9,7 +9,17 @@ const blink = keyframes`
   }
 `
 
-const typing = (size: number) => keyframes`
+const typingAuthor = (size: number) => keyframes`
+  0% {
+    width: 0;
+  }
+  100% {
+    width: ${size}rem;
+    border-right-color: transparent;
+  }
+`
+
+const typingTitle = (size: number) => keyframes`
   0% {
     width: 0;
     border-right-color: transparent;
@@ -19,16 +29,6 @@ const typing = (size: number) => keyframes`
   }
   100% {
     width: ${size}rem;
-  }
-`
-
-const typingAuthor = (size: number) => keyframes`
-  0% {
-    width: 0;
-  }
-  100% {
-    width: ${size}rem;
-    border-right-color: transparent;
   }
 `
 
@@ -91,5 +91,5 @@ export const Title = styled.h1`
   white-space: nowrap;
   overflow: hidden;
   animation: ${blink} 500ms infinite steps(37) normal,
-    ${typing(56)} 6s 5s steps(37) normal both;
+    ${typingTitle(56)} 6s 5s steps(37) normal both;
 `
