@@ -1,8 +1,14 @@
+import Image from 'next/image'
 import * as S from './styles'
 
-const TechnologyIcon = () => (
+export type TechnologyIconProps = {
+  src: string
+  alt: string
+}
+
+const TechnologyIcon = ({ src, alt }: TechnologyIconProps) => (
   <S.Wrapper>
-    <h1>TechnologyIcon</h1>
+    <Image src={src} alt={alt} width={200} height={200} />
   </S.Wrapper>
 )
 
