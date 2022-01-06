@@ -36,7 +36,6 @@ export const Wrapper = styled.section`
   display: flex;
   height: 100vh;
   background: #333333;
-  padding: 5rem;
 
   align-items: center;
   justify-content: center;
@@ -60,16 +59,6 @@ export const Content = styled.div`
       margin-top: 5rem;
     }
   }
-
-  @media (max-width: 660px) {
-    p {
-      font-size: 1.5rem;
-    }
-
-    h1 {
-      font-size: 4rem;
-    }
-  }
 `
 
 export const Author = styled.p`
@@ -81,6 +70,12 @@ export const Author = styled.p`
   overflow: hidden;
   animation: ${blink} 500ms infinite steps(16) normal,
     ${typingAuthor(16.5)} 4s 1s steps(16) normal both;
+
+  @media (max-width: 720px) {
+    font-size: 1.5rem;
+    animation: ${blink} 500ms infinite steps(16) normal,
+      ${typingAuthor(12.3)} 4s 1s steps(16) normal both;
+  }
 `
 
 export const Title = styled.h1`
@@ -92,4 +87,10 @@ export const Title = styled.h1`
   overflow: hidden;
   animation: ${blink} 500ms infinite steps(37) normal,
     ${typingTitle(56)} 6s 5s steps(37) normal both;
+
+  @media (max-width: 720px) {
+    font-size: 3rem;
+    animation: ${blink} 500ms infinite steps(37) normal,
+      ${typingTitle(33.5)} 6s 5s steps(37) normal both;
+  }
 `
