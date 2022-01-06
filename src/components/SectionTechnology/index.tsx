@@ -10,7 +10,9 @@ export type SectionTechnologyProps = {
 
 const SectionTechnology = ({ title, icons }: SectionTechnologyProps) => (
   <S.Wrapper>
-    <Heading>{title}</Heading>
+    <Heading lineBottom size="huge">
+      {title}
+    </Heading>
     <S.Content>
       {icons.map((icon, index) => (
         <TechnologyIcon {...icon} key={`TechIcon-${index}`} />

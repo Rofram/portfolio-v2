@@ -1,7 +1,7 @@
 import { SectionTechnologyProps } from '.'
 
 const mock: SectionTechnologyProps = {
-  title: 'Technology',
+  title: 'Current Focus',
   icons: [
     {
       src: '/img/techs/typescript.svg',
