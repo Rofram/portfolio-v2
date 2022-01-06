@@ -1,5 +1,5 @@
-import HomePage from 'template/HomePage'
-import homePageMock from 'template/HomePage/mock'
+import HomePage from 'templates/HomePage'
+import homePageMock from 'templates/HomePage/mock'
 
 export default function Home() {
   return <HomePage {...homePageMock} />
