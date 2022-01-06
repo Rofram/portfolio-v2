@@ -9,6 +9,7 @@ export type HeadingProps = {
   lineLeft?: boolean
   lineBottom?: boolean
   lineColor?: LineColors
+  style?: React.CSSProperties
 }
 
 const Heading = ({
@@ -17,7 +18,8 @@ const Heading = ({
   color,
   lineLeft = false,
   lineBottom = false,
-  lineColor = 'primary'
+  lineColor = 'primary',
+  style
 }: HeadingProps) => (
   <S.Wrapper
     size={size}
@@ -25,6 +27,7 @@ const Heading = ({
     lineLeft={lineLeft}
     lineBottom={lineBottom}
     lineColor={lineColor}
+    style={style}
   >
     {children}
   </S.Wrapper>

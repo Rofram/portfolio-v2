@@ -52,7 +52,7 @@ describe('<Heading />', () => {
     renderWithTheme(<Heading size="small">Won Games</Heading>)
 
     expect(screen.getByRole('heading', { name: /Won Games/i })).toHaveStyle({
-      'font-size': '1.6rem'
+      'font-size': `${theme.font.sizes.medium}`
     })
 
     expect(screen.getByRole('heading', { name: /Won Games/i })).toHaveStyleRule(
@@ -68,7 +68,7 @@ describe('<Heading />', () => {
     renderWithTheme(<Heading size="huge">Won Games</Heading>)
 
     expect(screen.getByRole('heading', { name: /Won Games/i })).toHaveStyle({
-      'font-size': '5.2rem'
+      'font-size': `${theme.font.sizes.huge}`
     })
   })
 
