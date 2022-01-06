@@ -8,8 +8,6 @@ import SectionTechnology, {
 } from 'components/SectionTechnology'
 import Base from 'templates/Base'
 
-// import * as S from './styles'
-
 export type HomePageProps = {
   sectionBanner: SectionBannerProps
   sectionProjects: SectionProjectsProps
