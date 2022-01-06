@@ -19,7 +19,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  background: linear-gradient(45deg, #3285b4 0%, #194058 100%);
+  background: #444444;
   border: 0;
 
   > div {

@@ -6,13 +6,19 @@ export const Wrapper = styled.section`
   flex-direction: column;
   max-width: 1400px;
   padding: 2rem;
+  height: 100vh;
 
-  > div {
+  > h2 {
     margin: 3rem 0;
+  }
+
+  @media (max-width: 1050px) {
+    height: auto;
   }
 `
 
 export const Content = styled.div`
+  margin-top: 6rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 8rem;

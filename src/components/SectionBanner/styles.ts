@@ -36,6 +36,7 @@ export const Wrapper = styled.section`
   display: flex;
   height: 100vh;
   background: #333333;
+  padding: 0 3rem;
 
   align-items: center;
   justify-content: center;
