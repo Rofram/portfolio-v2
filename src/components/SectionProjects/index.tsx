@@ -14,7 +14,9 @@ const SectionProjects = ({ title, projects }: SectionProjectsProps) => {
 
   return (
     <S.Wrapper ref={scrollRef}>
-      <Heading lineBottom>{title}</Heading>
+      <Heading lineBottom size="huge">
+        {title}
+      </Heading>
       <S.Content>
         {projects.map((project, index) => (
           <motion.div
