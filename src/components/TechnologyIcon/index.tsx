@@ -8,7 +8,7 @@ export type TechnologyIconProps = {
 
 const TechnologyIcon = ({ src, alt }: TechnologyIconProps) => (
   <S.Wrapper>
-    <Image src={src} alt={alt} width={200} height={200} />
+    <Image src={src} alt={alt} width={150} height={150} />
   </S.Wrapper>
 )
 
