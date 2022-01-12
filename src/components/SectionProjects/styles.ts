@@ -9,15 +9,11 @@ export const Wrapper = styled.section`
   height: 100vh;
 
   > h2 {
-<<<<<<< HEAD
-    margin: 3rem 0;
-=======
     margin-top: 6rem;
   }
 
   @media (max-width: 1250px) {
     height: auto;
->>>>>>> add responsivity
   }
 
   @media (max-width: 1050px) {
