@@ -1,4 +1,5 @@
-import { render, screen } from '@testing-library/react'
+import { screen } from '@testing-library/react'
+import { renderWithTheme } from 'utils/tests/helpers'
 
 import SectionTechnology from '.'
 
@@ -15,7 +16,7 @@ jest.mock('../Heading', () => {
 
 describe('<SectionTechnology />', () => {
   it('should render the heading', () => {
-    render(<SectionTechnology {...props} />)
+    renderWithTheme(<SectionTechnology {...props} />)
 
     expect(screen.getByTestId('Heading')).toBeInTheDocument()
   })
