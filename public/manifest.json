@@ -14,7 +14,7 @@
     }
   ],
   "background_color": "#06092B",
-  "description": "Boilerplate utilizando Typescript, React, NextJS e Styled Components!",
+  "description": "Portfólio pessoal",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#06092B"
