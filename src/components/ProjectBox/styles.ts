@@ -19,7 +19,11 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
+<<<<<<< HEAD
   background: #444444;
+=======
+  background: #3285b4;
+>>>>>>> alter content background
   border: 0;
 
   > div {
