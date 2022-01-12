@@ -1,13 +1,14 @@
-import { render, screen } from '@testing-library/react'
+import { screen } from '@testing-library/react'
+import { renderWithTheme } from 'utils/tests/helpers'
 
 import TechnologyDetails from '.'
 
+import mock from './mock'
+
 describe('<TechnologyDetails />', () => {
   it('should render the heading', () => {
-    render(<TechnologyDetails />)
+    renderWithTheme(<TechnologyDetails {...mock} />)
 
-    expect(
-      screen.getByRole('heading', { name: /TechnologyDetails/i })
-    ).toBeInTheDocument()
+    expect(screen.getByText(mock.title)).toBeInTheDocument()
   })
 })
