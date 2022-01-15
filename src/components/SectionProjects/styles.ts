@@ -1,4 +1,15 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const popup = keyframes`
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+`
 
 export const Wrapper = styled.section`
   display: flex;
@@ -39,4 +50,8 @@ export const Content = styled.div`
     grid-template-columns: 1fr;
     height: auto;
   }
+`
+
+export const Box = styled.div`
+  animation: ${popup} 0.3s ease-in-out both;
 `

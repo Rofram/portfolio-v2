@@ -1,6 +1,5 @@
 import Heading from 'components/Heading'
 import ProjectBox, { ProjectBoxProps } from 'components/ProjectBox'
-import { motion } from 'framer-motion'
 import { useRef } from 'react'
 import * as S from './styles'
 
@@ -18,19 +17,10 @@ const SectionProjects = ({ title, projects }: SectionProjectsProps) => {
         {title}
       </Heading>
       <S.Content>
-        {projects.map((project, index) => (
-          <motion.div
-            key={`project-${index}`}
-            initial={{ opacity: 0 }}
-            whileInView={{ scale: [0, 1], opacity: [0, 1] }}
-            transition={{
-              duration: 0.5,
-              ease: 'easeInOut',
-              delay: index * 0.1
-            }}
-          >
+        {projects.map((project) => (
+          <S.Box key={project.title}>
             <ProjectBox {...project} />
-          </motion.div>
+          </S.Box>
         ))}
       </S.Content>
     </S.Wrapper>

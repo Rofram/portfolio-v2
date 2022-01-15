@@ -14,10 +14,42 @@ const mock: SectionProjectsProps = {
         alt: 'Happy'
       }
     },
-    ProjectBoxMock,
-    ProjectBoxMock,
-    ProjectBoxMock,
-    ProjectBoxMock
+    {
+      title: 'Wongames',
+      description:
+        'E-commerce de games desenvolvido no curso React Avançado do Willian Justen',
+      img: {
+        url: '/img/happy.png',
+        alt: 'Happy'
+      }
+    },
+    {
+      title: 'Happy',
+      description:
+        'Aplicação web para agendamento de serviços para orphanatos feito na semana Omnistack da Rocketseat',
+      img: {
+        url: '/img/happy.png',
+        alt: 'Happy'
+      }
+    },
+    {
+      title: 'Happy',
+      description:
+        'Aplicação web para agendamento de serviços para orphanatos feito na semana Omnistack da Rocketseat',
+      img: {
+        url: '/img/happy.png',
+        alt: 'Happy'
+      }
+    },
+    {
+      title: 'Happy',
+      description:
+        'Aplicação web para agendamento de serviços para orphanatos feito na semana Omnistack da Rocketseat',
+      img: {
+        url: '/img/happy.png',
+        alt: 'Happy'
+      }
+    }
   ]
 }
 
