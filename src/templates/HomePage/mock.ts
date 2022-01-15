@@ -1,7 +1,7 @@
 import { HomePageProps } from '.'
-import SectionBannerMock from '../../components/SectionBanner/mock'
-import SectionProjectsMock from '../../components/SectionProjects/mock'
-import SectionTechnologyMock from '../../components/SectionTechnology/mock'
+import SectionBannerMock from 'components/SectionBanner/mock'
+import SectionProjectsMock from 'components/SectionProjects/mock'
+import SectionTechnologyMock from 'components/SectionTechnology/mock'
 
 const mock: HomePageProps = {
   sectionBanner: SectionBannerMock,
