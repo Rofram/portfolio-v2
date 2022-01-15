@@ -22,4 +22,10 @@ export const Content = styled.div`
   h2 {
     width: 600px;
   }
+
+  @media (max-width: 720px) {
+    h2 {
+      width: auto;
+    }
+  }
 `
