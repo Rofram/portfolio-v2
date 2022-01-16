@@ -15,8 +15,6 @@ export const Wrapper = styled.section`
   display: flex;
   flex: 1;
   flex-direction: column;
-  max-width: 1400px;
-  padding: 2rem;
   height: 100vh;
 
   > h2 {
@@ -24,10 +22,6 @@ export const Wrapper = styled.section`
   }
 
   @media (max-width: 1250px) {
-    height: auto;
-  }
-
-  @media (max-width: 1050px) {
     height: auto;
   }
 `
