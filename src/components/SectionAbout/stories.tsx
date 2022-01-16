@@ -1,9 +1,14 @@
 import { Story, Meta } from '@storybook/react'
-import SectionAbout from '.'
+import SectionAbout, { SectionAboutProps } from '.'
+
+import mock from './mock'
 
 export default {
   title: 'SectionAbout',
-  component: SectionAbout
+  component: SectionAbout,
+  args: mock
 } as Meta
 
-export const Default: Story = () => <SectionAbout />
+export const Default: Story<SectionAboutProps> = (args) => (
+  <SectionAbout {...args} />
+)
