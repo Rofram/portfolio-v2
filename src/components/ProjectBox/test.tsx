@@ -11,7 +11,7 @@ describe('<ProjectBox />', () => {
     expect(screen.getByRole('img')).toBeInTheDocument()
 
     expect(screen.getByRole('heading', { name: props.title })).toHaveStyle({
-      width: '250px',
+      width: '240px',
       fontSize: '2rem',
       color: '#fff'
     })
