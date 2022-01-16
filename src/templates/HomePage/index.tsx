@@ -1,5 +1,5 @@
 import { Container } from 'components/Container'
-import SectionAbout from 'components/SectionAbout'
+import SectionAbout, { SectionAboutProps } from 'components/SectionAbout'
 import SectionBanner, { SectionBannerProps } from 'components/SectionBanner'
 import SectionProjects, {
   SectionProjectsProps
@@ -13,12 +13,14 @@ export type HomePageProps = {
   sectionBanner: SectionBannerProps
   sectionProjects: SectionProjectsProps
   sectionTechnology: SectionTechnologyProps
+  sectionAbout: SectionAboutProps
 }
 
 const HomePage = ({
   sectionBanner,
   sectionProjects,
-  sectionTechnology
+  sectionTechnology,
+  sectionAbout
 }: HomePageProps) => (
   <Base>
     <SectionBanner {...sectionBanner} />
@@ -32,7 +34,7 @@ const HomePage = ({
     </Container>
 
     <Container>
-      <SectionAbout />
+      <SectionAbout {...sectionAbout} />
     </Container>
   </Base>
 )
