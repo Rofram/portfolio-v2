@@ -4,11 +4,18 @@ import * as S from './styles'
 export type TechnologyIconProps = {
   src: string
   alt: string
+  width: number
+  height: number
 }
 
-const TechnologyIcon = ({ src, alt }: TechnologyIconProps) => (
+const TechnologyIcon = ({
+  src,
+  alt,
+  width = 150,
+  height = 150
+}: TechnologyIconProps) => (
   <S.Wrapper>
-    <Image src={src} alt={alt} width={150} height={150} />
+    <Image src={src} alt={alt} width={width} height={height} />
   </S.Wrapper>
 )
 
