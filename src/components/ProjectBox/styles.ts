@@ -1,12 +1,14 @@
 import styled from 'styled-components'
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.a`
   display: flex;
   max-width: 450px;
   flex-direction: column;
   background: #cccccc;
   border-radius: 20px;
   overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
 
   transition: transform 0.3s ease-in-out;
 
@@ -36,7 +38,7 @@ export const Content = styled.div`
 `
 
 export const Title = styled.h2`
-  width: 250px;
+  width: 240px;
   font-size: 2rem;
   color: #fff;
   white-space: nowrap;
