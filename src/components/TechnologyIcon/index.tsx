@@ -4,8 +4,8 @@ import * as S from './styles'
 export type TechnologyIconProps = {
   src: string
   alt: string
-  width: number
-  height: number
+  width?: number
+  height?: number
 }
 
 const TechnologyIcon = ({
