@@ -7,67 +7,61 @@ import Heading from '.'
 
 describe('<Heading />', () => {
   it('should render a white heading by default', () => {
-    renderWithTheme(<Heading>Won Games</Heading>)
+    renderWithTheme(<Heading>lorem ipsum</Heading>)
 
     expect(
-      screen.getByRole('heading', { name: /Won Games/i })
+      screen.getByRole('heading', { name: /lorem ipsum/i })
     ).toBeInTheDocument()
   })
 
   it('should render a black heading when color is passed', () => {
-    renderWithTheme(<Heading color="black">Won Games</Heading>)
+    renderWithTheme(<Heading color="black">lorem ipsum</Heading>)
 
-    expect(screen.getByRole('heading', { name: /Won Games/i })).toHaveStyle({
+    expect(screen.getByRole('heading', { name: /lorem ipsum/i })).toHaveStyle({
       color: `${theme.colors.black}`
     })
   })
 
   it('should render a heading with the lineLeft passed', () => {
-    renderWithTheme(<Heading lineLeft>Won Games</Heading>)
+    renderWithTheme(<Heading lineLeft>lorem ipsum</Heading>)
 
-    expect(screen.getByRole('heading', { name: /Won Games/i })).toHaveStyleRule(
-      'padding-left',
-      '0.8rem'
-    )
+    expect(
+      screen.getByRole('heading', { name: /lorem ipsum/i })
+    ).toHaveStyleRule('padding-left', '0.8rem')
 
-    expect(screen.getByRole('heading', { name: /Won Games/i })).toHaveStyleRule(
-      'border-left',
-      `0.7rem solid ${theme.colors.primary}`
-    )
+    expect(
+      screen.getByRole('heading', { name: /lorem ipsum/i })
+    ).toHaveStyleRule('border-left', `0.7rem solid ${theme.colors.primary}`)
   })
 
   it('should render a heading with the lineBottom passed', () => {
-    renderWithTheme(<Heading lineBottom>Won Games</Heading>)
+    renderWithTheme(<Heading lineBottom>lorem ipsum</Heading>)
 
-    expect(screen.getByRole('heading', { name: /Won Games/i })).toHaveStyleRule(
-      'border-bottom',
-      `0.5rem solid ${theme.colors.primary}`,
-      {
-        modifier: '::after'
-      }
-    )
+    expect(
+      screen.getByRole('heading', { name: /lorem ipsum/i })
+    ).toHaveStyleRule('border-bottom', `0.5rem solid ${theme.colors.primary}`, {
+      modifier: '::after'
+    })
   })
 
   it('should render a heading with a small size', () => {
-    renderWithTheme(<Heading size="small">Won Games</Heading>)
+    renderWithTheme(<Heading size="small">lorem ipsum</Heading>)
 
-    expect(screen.getByRole('heading', { name: /Won Games/i })).toHaveStyle({
+    expect(screen.getByRole('heading', { name: /lorem ipsum/i })).toHaveStyle({
       'font-size': `${theme.font.sizes.medium}`
     })
 
-    expect(screen.getByRole('heading', { name: /Won Games/i })).toHaveStyleRule(
-      'width',
-      '3rem',
-      {
-        modifier: '::after'
-      }
-    )
+    expect(
+      screen.getByRole('heading', { name: /lorem ipsum/i })
+    ).toHaveStyleRule('width', '3rem', {
+      modifier: '::after'
+    })
   })
 
   it('should render a heading with a huge size', () => {
-    renderWithTheme(<Heading size="huge">Won Games</Heading>)
+    renderWithTheme(<Heading size="huge">lorem ipsum</Heading>)
 
-    expect(screen.getByRole('heading', { name: /Won Games/i })).toHaveStyle({
+    expect(screen.getByRole('heading', { name: /lorem ipsum/i })).toHaveStyle({
       'font-size': `${theme.font.sizes.huge}`
     })
   })
@@ -75,35 +69,35 @@ describe('<Heading />', () => {
   it('should render a Heading with a primary line color', () => {
     renderWithTheme(
       <Heading lineBottom lineLeft lineColor="primary">
-        Won Games
+        lorem ipsum
       </Heading>
     )
 
-    expect(screen.getByRole('heading', { name: /Won Games/i })).toHaveStyle({
+    expect(screen.getByRole('heading', { name: /lorem ipsum/i })).toHaveStyle({
       'border-left': `0.7rem solid ${theme.colors.primary}`
     })
 
-    expect(screen.getByRole('heading', { name: /Won Games/i })).toHaveStyleRule(
-      'border-bottom',
-      `0.5rem solid ${theme.colors.primary}`,
-      {
-        modifier: '::after'
-      }
-    )
+    expect(
+      screen.getByRole('heading', { name: /lorem ipsum/i })
+    ).toHaveStyleRule('border-bottom', `0.5rem solid ${theme.colors.primary}`, {
+      modifier: '::after'
+    })
   })
 
   it('should render a Heading with a secondary line color', () => {
     renderWithTheme(
       <Heading lineBottom lineLeft lineColor="secondary">
-        Won Games
+        lorem ipsum
       </Heading>
     )
 
-    expect(screen.getByRole('heading', { name: /Won Games/i })).toHaveStyle({
+    expect(screen.getByRole('heading', { name: /lorem ipsum/i })).toHaveStyle({
       'border-left': `0.7rem solid ${theme.colors.secondary}`
     })
 
-    expect(screen.getByRole('heading', { name: /Won Games/i })).toHaveStyleRule(
+    expect(
+      screen.getByRole('heading', { name: /lorem ipsum/i })
+    ).toHaveStyleRule(
       'border-bottom',
       `0.5rem solid ${theme.colors.secondary}`,
       {
