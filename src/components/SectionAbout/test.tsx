@@ -3,9 +3,11 @@ import { renderWithTheme } from 'utils/tests/helpers'
 
 import SectionAbout from '.'
 
+import mock from './mock'
+
 describe('<SectionAbout />', () => {
   it('should render the heading', () => {
-    renderWithTheme(<SectionAbout />)
+    renderWithTheme(<SectionAbout {...mock} />)
 
     expect(
       screen.getByRole('heading', { name: /about me/i })
